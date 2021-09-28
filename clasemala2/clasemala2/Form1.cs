@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace clasemala2
 {
-    public partial class Form1 : Form
+    public partial class recuadro : Form
     {
-        public Form1()
+        public recuadro()
         {
             Timer t1 = new Timer(); 
             t1.Tick += new EventHandler(eventoTimer);
             InitializeComponent();
             t1.Enabled = true;
+
         }
 
         private void eventoTimer(object sender, EventArgs e)
@@ -40,6 +41,26 @@ namespace clasemala2
 
         private void label1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void bt_location_Click(object sender, EventArgs e)
+        {
+            recuadro f1 = new recuadro();
+            int ancho = f1.Width;
+            int alto = f1.Height;
+            
+ 
+            var rand = new Random();
+            int x;
+            int y;
+            do
+            {
+                x = rand.Next(0, ancho);
+                y = rand.Next(0, alto);
+                Console.WriteLine(x.ToString()+""+y.ToString());
+            } while (button1.Location.X == x || button1.Location.Y == y || button2.Location.X == x || button2.Location.Y == y);
+                pb_fondo.Location = new Point(x, y);
 
         }
     }

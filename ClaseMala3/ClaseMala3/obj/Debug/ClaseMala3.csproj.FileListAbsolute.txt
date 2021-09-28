@@ -1,0 +1,10 @@
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\obj\Debug\ClaseMala3.csproj.AssemblyReference.cache
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\obj\Debug\ClaseMala3.Form1.resources
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\obj\Debug\ClaseMala3.Properties.Resources.resources
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\obj\Debug\ClaseMala3.csproj.GenerateResource.cache
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\obj\Debug\ClaseMala3.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\bin\Debug\ClaseMala3.exe.config
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\bin\Debug\ClaseMala3.exe
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\bin\Debug\ClaseMala3.pdb
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\obj\Debug\ClaseMala3.exe
+C:\Users\carlo\source\repos\ClaseMala3\ClaseMala3\obj\Debug\ClaseMala3.pdb
