@@ -32,7 +32,7 @@ namespace ClaseMala3
                 txt_login.Text = "";
             }
             if (count == 3)
-                lbl_mostrar.Text = "Has superado el intento máximo para logearte. ";
+                this.Close();
         }
     }
 }
