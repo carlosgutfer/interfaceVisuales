@@ -7,7 +7,9 @@ namespace formularioBanco
     public partial class Form1 : Form
     {
 
-        List<cliente> todosClientes = new List<cliente>();
+       // List<cliente> todosClientes = new List<cliente>();
+        cliente [] arrayClientes = new cliente [0];
+        int i = -1;
         public Form1()
         {
             InitializeComponent();
@@ -39,25 +41,34 @@ namespace formularioBanco
             IBAN = txt_cuenta.Text;
             try
             {
-                saldo = Double.Parse(txt_saldo.Text);
+                saldo = double.Parse(txt_saldo.Text);
                 if (nombre.Equals("") && !IBAN.Equals(""))
+                {
                     lbl_aviso.Text = "El campo nombre no puede estar vacio";
+                    txt_nombre.Focus();
+                }
                 else if (!nombre.Equals("") && IBAN.Equals(""))
+                {
                     lbl_aviso.Text = "El campo cuenta no puede estar vacio";
+                    txt_cuenta.Focus();
+
+                }
                 else if (nombre.Equals("") && IBAN.Equals(""))
                     lbl_aviso.Text = "El campo cuenta y nombre no pueden estar vacios";
                 else
                 {
-                    todosClientes.Add(new cliente(nombre, IBAN, saldo));
+                    Array.Resize(ref arrayClientes, arrayClientes.Length + 1);
+                    arrayClientes[++i] = new cliente(nombre, IBAN, saldo);
+                    // todosClientes.Add(new cliente(nombre, IBAN, saldo));
                     txt_cuenta.Text = "";
                     txt_nombre.Text = "";
                     txt_saldo.Text = "";
                     lbl_aviso.Text = "Usuario registrado correctamente";
-
+                    txt_nombre.Focus();
                 }
 
             }
-            catch (Exception ex) 
+            catch (Exception) 
             {
                 lbl_aviso.Text = "Error en el campo saldo";
             }
@@ -74,9 +85,11 @@ namespace formularioBanco
 
         private void bt_consultar_Click(object sender, EventArgs e)
         {
-          
-            for (int i = 0; i < todosClientes.Count; i++)
-                lbl_clientes.Text = lbl_clientes.Text + todosClientes[i].toString();
+            lbl_clientes.Text = "";
+            for (int i = 0; i < arrayClientes.Length; i++)
+                lbl_clientes.Text = lbl_clientes.Text + arrayClientes[i].ToString() +  '\n';
         }
     }
+
+    
 }

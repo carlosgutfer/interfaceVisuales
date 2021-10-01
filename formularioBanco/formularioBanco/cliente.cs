@@ -3,37 +3,18 @@
     internal class cliente
     {
         private string nombre;
-        private string IBAN;
+        private string iBAN;
         private double saldo;
 
-       
-
-        public  cliente(string nombre, string IBAN, double saldo) 
+        public cliente(string nombre, string iBAN, double saldo)
         {
             this.nombre = nombre;
-            this.IBAN = IBAN;
+            this.iBAN = iBAN;
             this.saldo = saldo;
         }
-
-        public string getNombre()
+        public override string ToString()
         {
-            return this.nombre;
+            return "Nombre: " + this.nombre + " IBAN: " + this.iBAN + " saldo: " + this.saldo;
         }
-
-        public string getIBAN() 
-        {
-            return this.IBAN;
-        }
-
-        public double getSaldo() 
-        {
-            return this.saldo;
-        }
-
-        public string toString() 
-        {
-            return this.nombre + " - " + this.IBAN + " - " + this.saldo;
-        }
-
     }
 }

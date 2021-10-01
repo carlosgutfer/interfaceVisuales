@@ -30,6 +30,7 @@ namespace formularioBanco
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_aviso = new System.Windows.Forms.Label();
             this.txt_saldo = new System.Windows.Forms.TextBox();
             this.txt_cuenta = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
@@ -40,7 +41,6 @@ namespace formularioBanco
             this.bt_aceptar = new System.Windows.Forms.Button();
             this.bt_consultar = new System.Windows.Forms.Button();
             this.bt_cancelar = new System.Windows.Forms.Button();
-            this.lbl_aviso = new System.Windows.Forms.Label();
             this.lbl_clientes = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,14 @@ namespace formularioBanco
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(326, 178);
             this.panel1.TabIndex = 0;
+            // 
+            // lbl_aviso
+            // 
+            this.lbl_aviso.AutoSize = true;
+            this.lbl_aviso.Location = new System.Drawing.Point(26, 148);
+            this.lbl_aviso.Name = "lbl_aviso";
+            this.lbl_aviso.Size = new System.Drawing.Size(0, 13);
+            this.lbl_aviso.TabIndex = 7;
             // 
             // txt_saldo
             // 
@@ -87,7 +95,7 @@ namespace formularioBanco
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 0);
+            this.label1.Location = new System.Drawing.Point(92, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 24);
             this.label1.TabIndex = 3;
@@ -154,14 +162,6 @@ namespace formularioBanco
             this.bt_cancelar.Text = "CANCELAR";
             this.bt_cancelar.UseVisualStyleBackColor = true;
             this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
-            // 
-            // lbl_aviso
-            // 
-            this.lbl_aviso.AutoSize = true;
-            this.lbl_aviso.Location = new System.Drawing.Point(26, 148);
-            this.lbl_aviso.Name = "lbl_aviso";
-            this.lbl_aviso.Size = new System.Drawing.Size(0, 13);
-            this.lbl_aviso.TabIndex = 7;
             // 
             // lbl_clientes
             // 

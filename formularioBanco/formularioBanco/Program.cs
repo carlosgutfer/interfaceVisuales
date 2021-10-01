@@ -12,8 +12,6 @@ namespace formularioBanco
         [STAThread]
         static void Main()
         {
-            cliente nuevoCliente; 
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
