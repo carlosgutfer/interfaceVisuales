@@ -1,0 +1,13 @@
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\bin\Debug\gestionBilletes.exe.config
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\bin\Debug\gestionBilletes.exe
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\bin\Debug\gestionBilletes.pdb
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.csproj.AssemblyReference.cache
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.main_form.resources
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.Properties.Resources.resources
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.csproj.GenerateResource.cache
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.exe
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.pdb
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.ComprarBilleteForm.resources
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.RegistrarUsuarioForm.resources
+C:\Users\carlo\source\repos\gestionBilletes\gestionBilletes\obj\Debug\gestionBilletes.mostrarReservasForm.resources

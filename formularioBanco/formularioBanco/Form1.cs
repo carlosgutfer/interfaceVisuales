@@ -70,6 +70,7 @@ namespace formularioBanco
             }
             catch (Exception) 
             {
+                txt_cuenta.Focus();
                 lbl_aviso.Text = "Error en el campo saldo";
             }
 
@@ -87,7 +88,7 @@ namespace formularioBanco
         {
             lbl_clientes.Text = "";
             for (int i = 0; i < arrayClientes.Length; i++)
-                lbl_clientes.Text = lbl_clientes.Text + arrayClientes[i].ToString() +  '\n';
+                lbl_clientes.Text  +=  arrayClientes[i].ToString() +  '\n';
         }
     }
 
