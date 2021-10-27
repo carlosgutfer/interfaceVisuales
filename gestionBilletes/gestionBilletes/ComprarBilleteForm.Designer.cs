@@ -29,6 +29,7 @@ namespace gestionBilletes
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tb_DNI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@ namespace gestionBilletes
             this.lb_asiento = new System.Windows.Forms.Label();
             this.lb_asientos = new System.Windows.Forms.Label();
             this.lb_error = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // tb_DNI
@@ -45,15 +47,16 @@ namespace gestionBilletes
             this.tb_DNI.Name = "tb_DNI";
             this.tb_DNI.Size = new System.Drawing.Size(173, 20);
             this.tb_DNI.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.tb_DNI, "Introduce un DNI");
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "DNI usuario";
+            this.label1.Text = "DNI ";
             // 
             // button1
             // 
@@ -124,7 +127,7 @@ namespace gestionBilletes
             this.Controls.Add(this.tb_DNI);
             this.Name = "ComprarBilleteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Comprar Billete";
             this.Load += new System.EventHandler(this.ComprarBilleteForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -141,5 +144,6 @@ namespace gestionBilletes
         private System.Windows.Forms.Label lb_asiento;
         private System.Windows.Forms.Label lb_asientos;
         private System.Windows.Forms.Label lb_error;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

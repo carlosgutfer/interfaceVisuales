@@ -25,7 +25,7 @@ namespace gestionBilletes
 
         private void bt_registrar_Click(object sender, EventArgs e)
         {
-            if (validarDNITelefonoEmail(tb_DNI.Text, tb_telf.Text, tb_email.Text)) 
+            if (validarDNITelefonoEmailUsuario(tb_DNI.Text, tb_telf.Text, tb_email.Text)) 
             {
                 users.Add(new Usuario(tb_nombre.Text, tb_DNI.Text, tb_telf.Text, tb_email.Text));
                 DialogResult result;
@@ -35,7 +35,7 @@ namespace gestionBilletes
             }  
         }
 
-        private bool validarDNITelefonoEmail(String tb_DNI, String tb_telf, String tb_email)
+        private bool validarDNITelefonoEmailUsuario(String tb_DNI, String tb_telf, String tb_email)
         {
 
             String  mensaje;
@@ -44,26 +44,30 @@ namespace gestionBilletes
             valido = true;
             mensaje = "";
             if (!validaDNI(tb_DNI))
-            {
                 mensaje = "El DNI introducido no es correcto";
-                valido = false;
-            }
-            if (!validarTlf(tb_telf)) 
-            {
+            else if (!validarTlf(tb_telf)) 
                 mensaje = "El teléfono introducido no es correcto";
-                valido =  false;
-            }
-            if (!validarEmail(tb_email)) 
-            {
+            else if (!validarEmail(tb_email)) 
                 mensaje = "El correo introducido no es correcto";
-                valido = false;
-            }
-            if (!valido) 
+            else if (validarUsuario(tb_DNI)) 
+                mensaje = "El DNI introducido ya esta registrado";
+            if (!mensaje.Equals(""))
             {
                 lb_error.Text = mensaje;
-                return false;
-            }    
-              return true;
+                valido = false;
+            }   
+              return valido;
+        }
+
+        private bool validarUsuario(string tb_DNI)
+        {
+            Boolean encontrado;
+
+            encontrado = false;
+            for (int i = 0; i < users.Count && !encontrado; ++i)
+                if (users[i].getDNI().Equals(tb_DNI))
+                    encontrado = !encontrado;
+            return encontrado;
         }
 
         private bool validarEmail(string tb_email)
