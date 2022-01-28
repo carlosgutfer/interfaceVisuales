@@ -10,3 +10,5 @@ C:\Users\carlo\source\repos\Editor_de_texto\Editor_de_texto\obj\Debug\Editor_de_
 C:\Users\carlo\source\repos\Editor_de_texto\Editor_de_texto\obj\Debug\Editor_de_texto.pdb
 C:\Users\carlo\source\repos\Editor_de_texto\Editor_de_texto\obj\Debug\Editor_de_texto.Colores.resources
 C:\Users\carlo\source\repos\Editor_de_texto\Editor_de_texto\obj\Debug\Editor_de_texto.Main.resources
+C:\Users\carlo\source\repos\Editor_de_texto\Editor_de_texto\obj\Debug\Editor_de_texto.form_buscar.resources
+C:\Users\carlo\source\repos\Editor_de_texto\Editor_de_texto\obj\Debug\Editor_de_texto.form_buscar_web.resources

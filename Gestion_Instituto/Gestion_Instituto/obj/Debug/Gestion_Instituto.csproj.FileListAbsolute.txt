@@ -1,0 +1,14 @@
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.csproj.AssemblyReference.cache
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.Properties.Resources.resources
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.csproj.GenerateResource.cache
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.csproj.CoreCompileInputs.cache
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\bin\Debug\Gestion_Instituto.exe.config
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\bin\Debug\Gestion_Instituto.exe
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\bin\Debug\Gestion_Instituto.pdb
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.main.resources
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.exe
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.pdb
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.Alta.resources
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.Baja.resources
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.Listado.resources
+C:\Users\carlo\source\repos\Gestion_Instituto\Gestion_Instituto\obj\Debug\Gestion_Instituto.PonerNotas.resources
