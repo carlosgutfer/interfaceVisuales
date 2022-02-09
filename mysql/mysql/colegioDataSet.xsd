@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="colegioDataSet" targetNamespace="http://tempuri.org/colegioDataSet.xsd" xmlns:mstns="http://tempuri.org/colegioDataSet.xsd" xmlns="http://tempuri.org/colegioDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="colegioConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="colegioConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.mysql.Properties.Settings.GlobalReference.Default.colegioConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="alumnosTableAdapter" GeneratorDataComponentClassName="alumnosTableAdapter" Name="alumnos" UserDataComponentName="alumnosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="colegioConnectionString (Settings)" DbObjectName="colegio.alumnos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Id`, `Nombre`, `Apellido`, `Nota` FROM `alumnos`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="cambiosTableAdapter" GeneratorDataComponentClassName="cambiosTableAdapter" Name="cambios" UserDataComponentName="cambiosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="colegioConnectionString (Settings)" DbObjectName="colegio.cambios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Id`, `Tipo`, `Matricula`, `Incremento` FROM `cambios`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="colegioDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="colegioDataSet" msprop:Generator_UserDSName="colegioDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="alumnos" msprop:Generator_TableClassName="alumnosDataTable" msprop:Generator_TableVarName="tablealumnos" msprop:Generator_TablePropName="alumnos" msprop:Generator_RowDeletingName="alumnosRowDeleting" msprop:Generator_RowChangingName="alumnosRowChanging" msprop:Generator_RowEvHandlerName="alumnosRowChangeEventHandler" msprop:Generator_RowDeletedName="alumnosRowDeleted" msprop:Generator_UserTableName="alumnos" msprop:Generator_RowChangedName="alumnosRowChanged" msprop:Generator_RowEvArgName="alumnosRowChangeEvent" msprop:Generator_RowClassName="alumnosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cambios" msprop:Generator_TableClassName="cambiosDataTable" msprop:Generator_TableVarName="tablecambios" msprop:Generator_TablePropName="cambios" msprop:Generator_RowDeletingName="cambiosRowDeleting" msprop:Generator_RowChangingName="cambiosRowChanging" msprop:Generator_RowEvHandlerName="cambiosRowChangeEventHandler" msprop:Generator_RowDeletedName="cambiosRowDeleted" msprop:Generator_UserTableName="cambios" msprop:Generator_RowChangedName="cambiosRowChanged" msprop:Generator_RowEvArgName="cambiosRowChangeEvent" msprop:Generator_RowClassName="cambiosRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

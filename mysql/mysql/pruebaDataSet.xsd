@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="pruebaDataSet" targetNamespace="http://tempuri.org/pruebaDataSet.xsd" xmlns:mstns="http://tempuri.org/pruebaDataSet.xsd" xmlns="http://tempuri.org/pruebaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="pruebaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="pruebaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.mysql.Properties.Settings.GlobalReference.Default.pruebaConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tabla1TableAdapter" GeneratorDataComponentClassName="tabla1TableAdapter" Name="tabla1" UserDataComponentName="tabla1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="pruebaConnectionString (Settings)" DbObjectName="prueba.tabla1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `nombre`, `edad` FROM `tabla1`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="pruebaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="pruebaDataSet" msprop:Generator_UserDSName="pruebaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tabla1" msprop:Generator_TableClassName="tabla1DataTable" msprop:Generator_TableVarName="tabletabla1" msprop:Generator_TablePropName="tabla1" msprop:Generator_RowDeletingName="tabla1RowDeleting" msprop:Generator_RowChangingName="tabla1RowChanging" msprop:Generator_RowEvHandlerName="tabla1RowChangeEventHandler" msprop:Generator_RowDeletedName="tabla1RowDeleted" msprop:Generator_UserTableName="tabla1" msprop:Generator_RowChangedName="tabla1RowChanged" msprop:Generator_RowEvArgName="tabla1RowChangeEvent" msprop:Generator_RowClassName="tabla1Row">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
